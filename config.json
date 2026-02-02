@@ -1,27 +1,27 @@
 {
-  "name": "إبراهيم الشوادي",
-  "username": "@IElshawady26300",
-  "bio": "مهندس | مطوّر ويب\nبحب القهوة والكود والمشاريع الجديدة ☕💻\nتواصل معايا من هنا 👇",
+  "name": "ibraim Elshawady",
+  "username": "@shawady6",
+  "bio": "IT help engineer 💻🌐\nتواصل معايا من هنا 👇",
   "avatar": "./avatar.jpg",
   "links": [
     {
       "title": "واتساب",
-      "url": "https://wa.me/201xxxxxxxxx?text=مرحبا%20إبراهيم",
+      "url": "https://wa.me/201044120523?text=مرحبا%20إبراهيم",
       "icon": "fab fa-whatsapp"
     },
     {
       "title": "إنستغرام",
-      "url": "https://instagram.com/xxxxxxxx",
+      "url": "https://instagram.com/shawady6",
       "icon": "fab fa-instagram"
     },
     {
       "title": "إيميل شخصي",
-      "url": "mailto:yourname@example.com?subject=مرحبا",
+      "url": "mailto:shawady6@gmail.com?subject=مرحبا",
       "icon": "fas fa-envelope"
     },
     {
       "title": "لينكد إن",
-      "url": "https://www.linkedin.com/in/xxxxxxxx",
+      "url": "https://www.linkedin.com/in/shawady6",
       "icon": "fab fa-linkedin"
     }
   ]
