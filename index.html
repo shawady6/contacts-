@@ -13,16 +13,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
-    :root {
-      --bg: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-      --card: rgba(255,255,255,0.12);
-      --border: rgba(255,255,255,0.25);
-      --shadow: 0 10px 30px rgba(0,0,0,0.25);
-    }
     * { margin:0; padding:0; box-sizing:border-box; }
     body {
       font-family: 'Cairo', sans-serif;
-      background: var(--bg);
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       min-height: 100vh;
       display: flex;
@@ -31,15 +25,15 @@
       padding: 20px 15px;
     }
     .container {
-      background: var(--card);
+      background: rgba(255,255,255,0.12);
       backdrop-filter: blur(12px);
       border-radius: 24px;
       padding: 40px 25px;
       width: 100%;
       max-width: 420px;
       text-align: center;
-      border: 1px solid var(--border);
-      box-shadow: var(--shadow);
+      border: 1px solid rgba(255,255,255,0.25);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25);
     }
     .avatar {
       width: 110px; height: 110px;
@@ -60,7 +54,7 @@
       padding: 16px 24px;
       border-radius: 999px;
       font-size: 1.08rem;
-      border: 1px solid var(--border);
+      border: 1px solid rgba(255,255,255,0.25);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -73,6 +67,20 @@
       box-shadow: 0 12px 30px rgba(0,0,0,0.3);
     }
     .btn i { font-size: 1.4rem; }
+
+    /* الروابط المهمة أكبر شوية */
+    .btn.important {
+      padding: 18px 26px;
+      font-size: 1.14rem;
+      font-weight: 600;
+      background: rgba(255,255,255,0.30);
+      border-color: rgba(255,255,255,0.45);
+    }
+    .btn.important:hover {
+      background: rgba(255,255,255,0.40);
+      transform: translateY(-4px);
+    }
+
     footer { margin-top: 40px; font-size: 0.9rem; opacity: 0.7; }
   </style>
 </head>
@@ -82,11 +90,11 @@
     <img src="./avatar.jpg" alt="إبراهيم الشوادي" class="avatar" id="avatar">
 
     <h1 id="name">إبراهيم الشوادي</h1>
-    <div class="username" id="username">@IElshawady26300</div>
-    <p class="bio" id="bio">مهندس | مطوّر | بحب القهوة والكود ☕💻<br>تواصل معايا 👇</p>
+    <div class="username" id="username">@shawady6</div>
+    <p class="bio" id="bio">IT help engineer 💻🌐<br>تواصل معايا من هنا 👇</p>
 
     <div class="links" id="links-container">
-      <!-- الروابط هتظهر هنا أوتوماتيك -->
+      <!-- الروابط هتتبني أوتوماتيكيًا -->
     </div>
 
     <footer>© 2026 إبراهيم الشوادي</footer>
@@ -103,10 +111,11 @@
 
         const container = document.getElementById('links-container');
         container.innerHTML = '';
+
         (data.links || []).forEach(link => {
           const a = document.createElement('a');
           a.href = link.url;
-          a.className = 'btn';
+          a.className = 'btn' + (link.important ? ' important' : '');
           a.target = '_blank';
           a.rel = 'noopener noreferrer';
           a.innerHTML = `<i class="${link.icon}"></i> ${link.title}`;
