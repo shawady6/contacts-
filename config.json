@@ -1,0 +1,28 @@
+{
+  "name": "إبراهيم الشوادي",
+  "username": "@IElshawady26300",
+  "bio": "مهندس | مطوّر ويب\nبحب القهوة والكود والمشاريع الجديدة ☕💻\nتواصل معايا من هنا 👇",
+  "avatar": "./avatar.jpg",
+  "links": [
+    {
+      "title": "واتساب",
+      "url": "https://wa.me/201xxxxxxxxx?text=مرحبا%20إبراهيم",
+      "icon": "fab fa-whatsapp"
+    },
+    {
+      "title": "إنستغرام",
+      "url": "https://instagram.com/xxxxxxxx",
+      "icon": "fab fa-instagram"
+    },
+    {
+      "title": "إيميل شخصي",
+      "url": "mailto:yourname@example.com?subject=مرحبا",
+      "icon": "fas fa-envelope"
+    },
+    {
+      "title": "لينكد إن",
+      "url": "https://www.linkedin.com/in/xxxxxxxx",
+      "icon": "fab fa-linkedin"
+    }
+  ]
+}
