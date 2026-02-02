@@ -1,13 +1,26 @@
 {
-  "name": "ibraim Elshawady",
+  "name": "إبراهيم الشوادي",
   "username": "@shawady6",
   "bio": "IT help engineer 💻🌐\nتواصل معايا من هنا 👇",
   "avatar": "./avatar.jpg",
   "links": [
     {
+      "title": "اتصل بيا",
+      "url": "tel:+201044120523",
+      "icon": "fas fa-phone",
+      "important": true
+    },
+    {
       "title": "واتساب",
       "url": "https://wa.me/201044120523?text=مرحبا%20إبراهيم",
-      "icon": "fab fa-whatsapp"
+      "icon": "fab fa-whatsapp",
+      "important": true
+    },
+    {
+      "title": "لينكد إن",
+      "url": "https://www.linkedin.com/in/shawady6",
+      "icon": "fab fa-linkedin",
+      "important": true
     },
     {
       "title": "إنستغرام",
@@ -15,14 +28,9 @@
       "icon": "fab fa-instagram"
     },
     {
-      "title": "إيميل شخصي",
+      "title": "إيميل",
       "url": "mailto:shawady6@gmail.com?subject=مرحبا",
       "icon": "fas fa-envelope"
-    },
-    {
-      "title": "لينكد إن",
-      "url": "https://www.linkedin.com/in/shawady6",
-      "icon": "fab fa-linkedin"
     }
   ]
 }
