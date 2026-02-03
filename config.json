@@ -31,6 +31,13 @@
       "title": "إيميل",
       "url": "mailto:shawady6@gmail.com?subject=مرحبا",
       "icon": "fas fa-envelope"
+    },
+    {
+      "title": "تحميل السيرة الذاتية",
+      "url": "https://shawady6.github.io/contacts-/Ibrahim%20Elsaid-help%20desk.pdf",
+      "icon": "fas fa-file-arrow-down",
+      "important": true,
+      "download": true
     }
   ]
 }
