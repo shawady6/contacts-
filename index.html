@@ -68,7 +68,6 @@
     }
     .btn i { font-size: 1.4rem; }
 
-    /* الروابط المهمة أكبر شوية */
     .btn.important {
       padding: 18px 26px;
       font-size: 1.14rem;
@@ -116,8 +115,15 @@
           const a = document.createElement('a');
           a.href = link.url;
           a.className = 'btn' + (link.important ? ' important' : '');
-          a.target = '_blank';
-          a.rel = 'noopener noreferrer';
+
+          // دعم التحميل المباشر لملف الـ CV
+          if (link.download === true) {
+            a.download = link.filename || "";
+          } else {
+            a.target = '_blank';
+            a.rel = 'noopener noreferrer';
+          }
+
           a.innerHTML = `<i class="${link.icon}"></i> ${link.title}`;
           container.appendChild(a);
         });
